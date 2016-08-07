@@ -1,0 +1,15 @@
+<ul>
+  <li *ngFor="let data of response">
+    <div>
+      {{data}}
+    </div>
+
+  </li>
+</ul>
+
+
+<input [(ngModel)]="name" name="name" (ngModelChange)="setValueText($event)">
+
+<button (click)="add(name)">Ekle</button>
+<button (click)="goToHome()">Yonlendir</button>
+
